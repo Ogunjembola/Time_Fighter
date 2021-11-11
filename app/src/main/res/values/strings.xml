@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Time Fighter</string>
+    <string name="time_left_1_d">Time left:%1$d</string>
+    <string name="your_score_0">Your Score: 0</string>
+    <string name="game_ver_message">Times up! Your Score was:%1$d</string>
+    <string name="about_title">Timefighter %1$s</string>
+    <string name="about_message">Created by Ogunjembola Adam</string>
+</resources>
