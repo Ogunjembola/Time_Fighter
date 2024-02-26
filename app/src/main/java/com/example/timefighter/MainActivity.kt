@@ -140,10 +140,22 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("StringFormatInvalid")
     private fun endGame() {
         // end game logic
-        Toast.makeText(
-            this, getString(R.string.game_ver_message, score),
-            Toast.LENGTH_LONG
-        ).show()
-        resetGame()
+        val dialogMessage = getString(R.string.game_ver_message, score)
+
+        AlertDialog.Builder(this)
+            .setTitle("Time's Up!")
+            .setMessage(dialogMessage)
+            .setPositiveButton("OK") { _, _ -> resetGame() }
+            .setCancelable(false)
+            .show()
     }
+
+//    private fun endGame() {
+//        // end game logic
+//        Toast.makeText(
+//            this, getString(R.string.game_ver_message, score),
+//            Toast.LENGTH_LONG
+//        ).show()
+//        resetGame()
+//    }
 }
